@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E7BDEA">
+
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="135dp"
+        android:entries="@array/units_array"
+        android:background="#E8A5A5"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/spinnerFrom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="139dp"
+        android:entries="@array/units_array"
+        android:background="#E8A5A5"/>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="410dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/spinnerTo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="1dp"
+        android:hint="@string/E_value"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="146dp"
+        android:text="@string/convert" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConvert"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/result"
+        android:textSize="24sp"
+       android:textColor="#4E7A1A"/>
+</RelativeLayout>
